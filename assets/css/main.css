@@ -1260,6 +1260,23 @@ table {
 .highlight {
   background-color: #f8f8f8; }
 
+/* 这个规则规定了iframe父元素容器的尺寸，16:9的近似值为56%*/
+.selfadapting-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
+  /* 高度应该是宽度的56% */
+  margin-bottom: 2rem; }
+
+/* 设定iframe的宽度和高度，让iframe占满整个父元素容器 */
+.selfadapting-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; }
+
 .hero {
   margin: 3.75rem auto 0;
   min-height: 16.25rem;
